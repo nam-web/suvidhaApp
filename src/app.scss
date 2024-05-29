@@ -1,0 +1,39 @@
+.container{
+    height: 100vh;
+
+    .sections{
+        width: 100%;
+        height: calc(100vh - 70px);
+        position: relative;
+        top: 70px;
+        scroll-snap-type: y mandatory;
+        scroll-behavior: smooth;
+        &::-webkit-scrollbar{
+            display: none;
+        }
+
+        > *{
+            width: 100vw;
+            height: calc(100vh - 70px);
+            scroll-snap-align: start;
+        }
+    }
+}
+
+// media query for mobile
+
+@media (max-width: 480px){
+    .container{
+        height: 100%;
+        .sections{
+            height: calc(100% - 70px);
+            position: relative;
+            top: 70px;
+    
+            > *{
+                width: 100vw;
+                height: calc(100% - 70px);
+            }
+        }
+    }
+}

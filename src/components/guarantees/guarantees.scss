@@ -1,0 +1,152 @@
+.guarantees{
+    background-color: #fff;
+
+    .title{
+        text-align: center;
+        color: #212EA0;
+        font-size: 15px;
+        font-weight: 600;
+        text-transform: uppercase;
+        margin: 70px 0 30px;
+
+        h2{
+            font-size: 35px;
+            color: #000F38;
+            margin-top: 5px;
+            text-transform: none;
+        }
+        p{
+            font-size: 20px;
+        }
+    }
+    .top{
+        display: flex;
+        margin-left: 50px;
+
+        .icon{
+            display: flex;
+
+            span{
+                font-size: 100px;
+                color: rgb(110, 18, 230);
+                margin: 50px;
+                overflow: hidden;
+                //margin-left: 50px;
+            }
+
+            .content{
+                //margin: 50px;
+                margin-top: 50px;
+
+                h6{
+                    font-size: 25px;
+                    color: #000F38;
+                }
+    
+                p{
+                    font-size: 18px;
+                    color: #212EA0;
+                    width: 500px;
+                    margin-top: 10px;
+                }
+            }
+
+           
+        }
+    }
+}
+
+// media queries
+
+@media (min-width: 768px) and (max-width: 1024px){
+    .guarantees{
+        .top{
+            margin-left: 10px;
+            .icon{
+                span{
+                    align-items: center;
+                    justify-content: center;
+                    margin: 50px 15px;
+                }
+                .content{
+                    p{
+                        width: 350px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 840px){
+    .guarantees{
+        .top{
+            // display: flex;
+            flex-direction: column;
+            margin-left: 0px;
+    
+            .icon{
+                span{
+                    font-size: 50px;
+                    margin-top: 10px;
+                    padding-right: 10px;
+                    margin-left: 20px;
+                }
+    
+                .content{
+                    margin-top: 10px;
+    
+                    h6{
+                        font-size: 20px;
+                    }
+        
+                    p{
+                        max-width: 90%;
+                        font-size: 14px;
+                        margin-top: 5px;
+                    }
+                }
+    
+               
+            }
+        }
+    }
+}
+
+// for mobile
+@media (max-width: 480px){
+    .guarantees{
+        .title{
+            margin-top: 50px;
+        }
+        .top{
+            margin-left: 0px;
+    
+            .icon{
+                span{
+                    margin-right: 0px;
+                    padding-right: 0px;
+                    margin-left: 20px;
+                }
+    
+                .content{
+                    max-width: 300px;
+                    margin-top: 10px;
+                    padding-left: 5%;
+    
+                    h6{
+                        font-size: 20px;
+                    }
+        
+                    p{
+                        max-width: 90%;
+                        font-size: 14px;
+                        margin-top: 5px;
+                    }
+                }
+    
+               
+            }
+        }
+    }
+}

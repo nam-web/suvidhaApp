@@ -1,0 +1,137 @@
+.mentors{
+    background-color: rgb(143, 68, 241);
+    padding-left: 10%;
+    padding-right: 10%;
+
+    .title{
+        text-align: center;
+        color: #212EA0;
+        font-size: 15px;
+        font-weight: 600;
+        text-transform: uppercase;
+        margin: 70px 0 30px;
+
+        h2{
+            font-size: 35px;
+            color: white;
+            margin-top: 5px;
+            text-transform: none;
+        }
+        p{
+            font-size: 20px;
+        }
+    }
+    
+    .images{
+       display: flex;
+       margin-left: 100px;
+       margin-right: 50px;
+
+        .mentor{
+            display: block;
+            img{
+                height: 350px;
+                padding: 40px;
+                align-items: center;
+            }
+            h4{
+                text-align: center;
+                color: #fff;
+                justify-content: center;
+            }
+            p{
+                text-align: center;
+                color: #fff;
+                font-size: 16px;
+                width: 250px;
+                padding-left: 80px;
+                margin-top: 10px;
+            }
+        }
+    }
+}
+
+// media queries
+
+@media (min-width: 768px) and (max-width: 1024px){
+    .mentors{
+        padding-left: 5%;
+        padding-right: 5%;
+        .images{
+            margin-left: 10px;
+            .mentor{
+                img{
+                    height: 300px;
+                }
+                p{
+                    text-align: center;
+                    width: 220px;
+                    padding-left: 40px;
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 840px){
+    .mentors{
+        padding-left: 3%;
+        padding-right: 3%;
+        
+        .images{
+           margin: 0;
+    
+            .mentor{
+                img{
+                    height: 180px;
+                    padding: 10px;
+                }
+                h4{
+                    font-size: 18px;
+                }
+                p{
+                    max-width: 110px;
+                    text-align: center;
+                    font-size: 14px;
+                    padding: 10px;
+                    margin-top: 5px;
+                }
+            }
+        }
+    }
+}
+
+// for mobile
+@media (max-width: 480px){
+    .mentors{
+        padding-left: 5%;
+        padding-right: 5%;
+        .title{
+            margin-top: 50px;
+        }
+        .images{
+           margin: 0 50px;
+           display: block;
+    
+            .mentor{
+                img{
+                    margin: 0 12%;
+                    height: 180px;
+                    padding: 0px;
+                }
+                h4{
+                    margin-top: 5px;
+                }
+                p{
+                    max-width: 220px;
+                    padding: 5px;
+                    margin-top: 0px;
+                    margin-bottom: 10px;
+                    // margin-left: 10%;
+                    // margin-right: 10%;
+                }
+            }
+        }
+    }
+}

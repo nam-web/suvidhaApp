@@ -1,0 +1,179 @@
+.work{
+    background-color: rgb(143, 68, 241);
+
+    .title{
+        text-align: center;
+        color: #212EA0;
+        font-size: 15px;
+        font-weight: 600;
+        text-transform: uppercase;
+        margin: 70px 0 30px;
+
+        h2{
+            font-size: 35px;
+            color: white;
+            margin-top: 5px;
+            text-transform: none;
+        }
+        p{
+            font-size: 20px;
+        }
+    }
+    .about{
+        margin: 100px auto;
+        display: flex;
+        justify-content: space-between;
+        .about-left{
+            position: relative;
+            padding-left: 10%;
+
+            .video-img{
+                width: 450px;
+                height: 330px;
+                border-radius: 10px;
+            }
+
+            .play-icon{
+                width: 100px;
+                top: 50%;
+                left: 50%;
+                transform: translate(-270%, -115%);
+                cursor: pointer;
+            }
+        }
+
+        .about-right{
+            display: block;
+            width: 50%;
+
+            h3{
+                font-weight: 600;
+                font-size: 18px;
+                color: #212EA0;
+            }
+
+            h2{
+                font-size: 35px;
+                color: #000F38;
+                margin: 10px 0;
+                max-width: 500px;
+            }
+            p{
+                color: white;
+                font-size: 20px;
+                width: 600px;
+                line-height: 1.3;
+                text-align: justify;
+            }
+        }
+    }
+}
+
+// media queries
+
+@media (max-width: 1024px){
+    .work{
+        .about{
+            margin: 100px 20px;
+            .about-left{
+                padding-left: 5%;
+    
+                .video-img{
+                    margin-top: 40px;
+                    width: 330px;
+                    height: 260px;
+                }
+                .play-icon{
+                    width: 50px;
+                    transform: translate(-380%, -200%);
+                }
+            }
+            .about-right{
+                margin-right: 5%;
+                h2{
+                    font-size: 30px;
+                }
+                p{
+                    font-size: 18px;
+                    width: 450px;
+                    line-height: 1.2;
+                    text-align: justify;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 840px){
+    .work{
+        &::-webkit-scrollbar{
+            display: none;
+        }
+        .about{
+            margin: 0px;
+            flex-direction: column;
+            width: 100%;
+    
+            .about-left{
+                position: relative;
+                padding-left: 10%;
+                width: 90%;
+    
+                .video-img{
+                    width: 100%;
+                    height: 200px;
+                    margin-top: 5px;
+                }
+    
+                .play-icon{
+                    width: 50px;
+                    margin-left: 100%;
+                    padding-bottom: 15px;
+                }
+            }
+    
+            .about-right{
+                width: 100%;
+    
+                h3{
+                    font-weight: 600;
+                    font-size: 16px;
+                    text-align: center;
+                }
+    
+                h2{
+                    font-size: 30px;
+                    margin: 5px;
+                    text-align: center;
+                }
+                p{
+                    color: white;
+                    font-size: 18px;
+                    max-width: 90%;
+                    margin-left: 5%;
+                    line-height: 1.2;
+                    margin-bottom: 15px;
+                }
+            }
+        }
+    }
+}
+
+// for mobile
+@media (max-width: 480px){
+    .work{
+        .title{
+            margin-top: 50px;
+        }
+        .about{
+            .about-left{
+                .play-icon{
+                    transform: translate(-290%, -260%);
+                    margin-left: 90%;
+                    margin-bottom: 0px;
+                    padding-bottom: 0px;
+                }
+            }
+        }
+    }
+}
