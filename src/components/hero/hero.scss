@@ -26,7 +26,10 @@
             line-height: 1.4;
         }
         .btn{
-            color: rgb(110, 18, 230);
+            background-color: #4158D0;
+            background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+            color: #fff;
+            // color: rgb(110, 18, 230);
             padding: 14px 25px;
             font-size: 20px;
             border-radius: 30px;
@@ -45,8 +48,11 @@
             }
         }
         .btn:hover{
-            background: rgb(110, 18, 230);;
-            color: white;
+            // background: rgb(110, 18, 230);;
+            // color: white;
+            background: #fff;
+            color: rgb(110, 18, 230);
+            font-weight: bold;
         }
     }
 }

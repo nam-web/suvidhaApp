@@ -3,9 +3,12 @@
     position: fixed;
     top: 70px;
     text-align: start;
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    
 
     li {
-        background-color: rgb(110, 18, 230);
+        // background-color: rgb(110, 18, 230);
         cursor: pointer;
       }
 
@@ -26,9 +29,12 @@
     top: 70px;
     list-style: none;
     text-align: start;
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    
 
     li {
-        background-color: rgb(110, 18, 230);
+        // background-color: rgb(110, 18, 230);
         cursor: pointer;
       }
 
@@ -52,7 +58,10 @@
       top: 165px;
       margin-left: 8px;
       li {
-          background-color: rgb(64, 7, 139);
+        background-color: #4158D0;
+        background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    
+          // background-color: rgb(64, 7, 139);
         } 
     }
 
@@ -62,7 +71,9 @@
       margin-left: 8px;
   
       li {
-          background-color: rgb(64, 7, 139);
+        background-color: #4158D0;
+        background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+          // background-color: rgb(64, 7, 139);
         }
     }
   }

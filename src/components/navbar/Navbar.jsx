@@ -4,7 +4,7 @@ import "./navbar.scss";
 import { navItems } from "./NavItems";
 import { Dropdown, Dropdown2 } from "./Dropdown";
 import logo from "../../assets/logo.png";
-import menu_icon from "../../assets/menu-icon.png";
+import menu_icon from "../../assets/menu-icon.png"; 
 
 export default function Navbar() {
   const [dropdown, setDropdown] = useState(false);
